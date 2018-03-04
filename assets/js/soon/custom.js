@@ -92,7 +92,7 @@ SLIDER
     "use strict";
     $("body.nomobile #slider").revolution(
     {
-            delay:9000,
+            delay:6000,
             startheight:450,
             startwidth:890,
 
