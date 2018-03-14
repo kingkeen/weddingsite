@@ -764,7 +764,7 @@ p > tag {
 
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 50px) {
 
 #db .col-lg-2 {
 	padding-left: 20%;

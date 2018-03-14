@@ -59,7 +59,7 @@ ANIMATIONS
         navigator.userAgent.match(/iPad/i)|| 
         navigator.userAgent.match(/iPod/i) || 
         navigator.userAgent.match(/BlackBerry/i)) {                 
-        isMobile = true;            
+        isMobile = false;            
     }
     if (isMobile == true) {
         $('body').removeClass('nomobile');
