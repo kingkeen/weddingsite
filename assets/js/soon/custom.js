@@ -64,6 +64,9 @@ ANIMATIONS
     if (isMobile == true) {
         $('body').removeClass('nomobile');
         $('.animated').removeClass('animated');
+        // var el = document.getElementById("header");
+        // el.classList.add("replaced");
+        $('body').addHTML('replaced');
     }
     $(function() {
         if (isMobile == false) {

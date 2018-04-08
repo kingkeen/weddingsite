@@ -1,11 +1,3 @@
-/*
- * Author: Carlos Alvarez
- * URL: http://alvarez.is
- *
- * Project Name: 
- * Version: 1.0
- * URL: http://alvarez.is
- */
 
 body {
   background-color: #f2f2f2;
@@ -16,6 +8,10 @@ body {
 
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
+}
+
+.replaced{
+	background-image: image("../img/1.jpg");
 }
 
 .maggy{
