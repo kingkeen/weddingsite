@@ -18,35 +18,38 @@ $( document ).ready(function() {
         console.log("made it to the click previous");
         imageIndex = (imageIndex + images.length -1) % (images.length);
         
+        if (imageIndex < 0){
+            imageIndex = images.length;
+            console.log("image was less than zero so now its to the last: "+ imageIndex);
+        }
+
         var newImage = "url("+images[imageIndex];
         console.log(newImage + " This is supposed to be the new url")
 
         $('#imagine').css("background-image", newImage);  
 
-
-        //ORIGINAL METHOD
-        // $("#imagine").attr('style', 'background-image:images[imageIndex]');
     });
 
     $("#next").on("click", function(){
         console.log("made it to the click next");
+        
         imageIndex = (imageIndex+1) % (images.length);    
+
+        if (imageIndex > images.length) {
+            imageIndex = 0;
+            console.log("image was more than length of array, so now its to the first: "+ imageIndex);
+
+        }
 
         var newImage = "url("+images[imageIndex];
         console.log(newImage + " This is supposed to be the new url")
         $('#imagine').css("background-image", newImage);  
 
-        // imagine.style.backgroundImage = "url('images[imageIndex]')";
-
-        //ORIGINAL METHOD
-        // $("#imagine").attr('style', 'background-image:images[imageIndex]');
     });
+    var startImage = "url("+images[0];
+    $('#imagine').css("background-image", startImage);  
+
 });
 
-    // $("#imagine").attr('style', 'background-image:images[0]');
 
-
-    // style="background-image:url('assets/images/8.jpg')"
-
-    // object.style.backgroundImage = "url('URL')|none|initial|inherit"
 
