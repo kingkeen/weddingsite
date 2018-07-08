@@ -9,7 +9,12 @@ $( document ).ready(function() {
         "assets/images/6.jpg",
         "assets/images/7.jpg",
         "assets/images/8.jpg",
-        "assets/images/9.jpg"   
+        "assets/images/9.jpg",
+        "assets/images/10.jpg",   
+        "assets/images/11.jpg",   
+        "assets/images/12.jpg",   
+        "assets/images/13.jpg"   
+
     ];
 
     var imageIndex = 0;
