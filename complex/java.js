@@ -13,8 +13,16 @@ $( document ).ready(function() {
         "assets/images/10.jpg",   
         "assets/images/11.jpg",   
         "assets/images/12.jpg",   
-        "assets/images/13.jpg"   
-
+        "assets/images/13.jpg",
+        "assets/images/14.jpg",
+        "assets/images/p1.jpg",
+        "assets/images/p2.jpg",
+        "assets/images/p3.jpg",
+        "assets/images/p4.jpg",
+        "assets/images/p5.jpg",
+        "assets/images/p6.jpg",
+        "assets/images/p7.jpg",
+        "assets/images/p8.jpg"
     ];
 
     var imageIndex = 0;
