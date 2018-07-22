@@ -55,7 +55,7 @@ $( document ).ready(function() {
         }
 
         var newImage = "url("+images[imageIndex];
-        console.log(newImage + " This is supposed to be the new url")
+        // console.log(newImage + " This is supposed to be the new url")
         $('#imagine').css("background-image", newImage);  
 
     });
