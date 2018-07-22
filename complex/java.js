@@ -28,29 +28,29 @@ $( document ).ready(function() {
     var imageIndex = 0;
 
     $("#previous").on("click", function(){          
-        console.log("made it to the click previous");
+        // console.log("made it to the click previous");
         imageIndex = (imageIndex + images.length -1) % (images.length);
         
         if (imageIndex < 0){
             imageIndex = images.length;
-            console.log("image was less than zero so now its to the last: "+ imageIndex);
+            // console.log("image was less than zero so now its to the last: "+ imageIndex);
         }
 
         var newImage = "url("+images[imageIndex];
-        console.log(newImage + " This is supposed to be the new url")
+        // console.log(newImage + " This is supposed to be the new url")
 
         $('#imagine').css("background-image", newImage);  
 
     });
 
     $("#next").on("click", function(){
-        console.log("made it to the click next");
+        // console.log("made it to the click next");
         
         imageIndex = (imageIndex+1) % (images.length);    
 
         if (imageIndex > images.length) {
             imageIndex = 0;
-            console.log("image was more than length of array, so now its to the first: "+ imageIndex);
+            // console.log("image was more than length of array, so now its to the first: "+ imageIndex);
 
         }
 
